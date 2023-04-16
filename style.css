@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
+
+/*
+font-family: "Josefin", sans;
+background-color: hsl(0, 0%, 94%);
+background: #424242;
+
+for card
+background: linear-gradient(45deg, #0c0200, #2f3131);
+box-shadow: rgbs(0, 0, 0.15) 0px 5px 15px 0px;
+
+a,p 
+font-family: "Josefin sans", sans;
+
+*/
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    font-family: "Girassol", cursive;
+    background: #424242;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.card {
+    height: 270px;
+    min-width: 250px;
+    width: 470px;
+    background: linear-gradient(45deg, #0c0200, #2f3131);
+    box-shadow: rgba(0, 0, 0.15) 0px 5px 15px 0px;
+    position: relative;
+    border-radius: 20px;
+    padding-left: 20px;
+    color: aliceblue;
+    transition: all 0.2s;
+
+
+}
+.card img{
+    height: 370px;
+    max-width: 100%;
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: all 0.2s;
+}
+
+.card h2 {
+    margin-top: 20px;
+    color: #e5aa1d;
+    transition: all 0.2s;
+
+}
+
+.card p, a {
+    font-family: "Josefin", sans;
+    transition: all 0.2s;
+    opacity: 0;
+}
+
+.card p {
+    width: 200px;
+    margin-bottom: 25px;
+    transition: all 0.2s;
+}
+
+.card a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #0c0200;
+    background-color: #e5aa1d;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.card a:hover{
+    color: #0c0200;
+    background-color: #04e5f5;
+}
+
+.card:hover img{
+    left: 80%;
+    top: 40%;
+    height: 400px;
+}
+
+.card:hover h2{
+    font-size: 28px;
+    margin-bottom: 15px;
+    letter-spacing: 2px;
+}
+
+.card:hover p,
+.card:hover a{
+    opacity: 1;
+}

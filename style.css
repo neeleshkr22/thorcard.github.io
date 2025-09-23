@@ -22,12 +22,21 @@ font-family: "Josefin sans", sans;
 }
 
 body {
-    height: 100vh;
+    min-height: 100vh;
     font-family: "Girassol", cursive;
     background: #424242;
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 20px;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    max-width: 1200px;
+    width: 100%;
 }
 
 
@@ -105,4 +114,41 @@ body {
 .card:hover p,
 .card:hover a{
     opacity: 1;
+}
+
+/* Character-specific color themes */
+.card:nth-child(1) {
+    /* Thor - Yellow/Gold theme */
+    background: linear-gradient(45deg, #0c0200, #2f3131);
+}
+
+.card:nth-child(1) h2 {
+    color: #e5aa1d;
+}
+
+.card:nth-child(2) {
+    /* Iron Man - Red/Gold theme */
+    background: linear-gradient(45deg, #4a0e0e, #8b1538);
+}
+
+.card:nth-child(2) h2 {
+    color: #ff6b6b;
+}
+
+.card:nth-child(3) {
+    /* Captain America - Blue/Red theme */
+    background: linear-gradient(45deg, #1e3c72, #2a5298);
+}
+
+.card:nth-child(3) h2 {
+    color: #74b9ff;
+}
+
+.card:nth-child(4) {
+    /* Spider-Man - Red/Blue theme */
+    background: linear-gradient(45deg, #8b0000, #1e3c72);
+}
+
+.card:nth-child(4) h2 {
+    color: #ff7675;
 }
